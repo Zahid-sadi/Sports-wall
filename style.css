@@ -1,0 +1,276 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;400;500&display=swap');
+
+/* common styles or utilities */
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+.body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+header{
+    align-items: center;
+}
+
+.container{
+    background-color: #161616;
+    display: flex;
+    flex-direction: row;
+    width: 1321px;
+    height: 646px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.top-left-frame{
+    width: 531px;
+    height: 424px;
+    margin: 4px 111px 24px 111px;
+    
+   
+}
+
+.top-right-frame img{
+    width: 581px;
+    height: 613px;
+    margin-top: 38px;
+    margin-right: 79px;
+
+}
+
+.top-left-frame h1{
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    
+
+}
+
+.top-left-frame p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+   
+}
+.watch-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:  #DD0000;
+    font-weight: 400;
+    font-size: 20px;
+    color:#FFFFFF;
+    border-radius: 5px;
+    width: 187px;
+    height: 56px;
+}
+.watch-button p{ 
+    color: #FFFFFF;
+}
+
+
+/* mainpart styles */
+
+.blogs-display{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr 3fr);
+     grid-gap: 24px;
+     margin-top: 110px;
+}
+
+.side-column{
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 312px;
+    height: 312px;
+    background: #e4e3e4;
+    border-radius: 10px;
+    
+
+}
+
+.side-column ul{
+    list-style-type: none;
+    padding: 2px;
+    margin: 25px;
+     
+    
+}
+.vertical ul li{
+    width: 252px;
+    height: 64px;
+    display: inline-block;
+    color: tomato;
+   
+    
+    
+}  
+.side-column ul li a{
+    color: #E8E8E8;
+    text-decoration: none;
+    display: flex;
+    margin: 24px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-page{
+    background-color: #465a70;
+    width: 252px;
+    height: 64px;
+    
+}
+
+.current-page{
+    background-color: #a41309;
+    width: 252px;
+    height: 64px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 311px;
+    height: 362px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.thumnail img{
+    width: 312px;
+    height: 175px;
+    border-radius: 10px 10px 0px 0px;
+}
+.blog button{
+    width: 100px;
+    height: 32px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.blog h3{
+    width: 272px;
+    height: 54px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+.blog-bottom{
+    display: flex;
+    width: 143px;
+    height: 26px;
+}
+.match-duration{
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+.fa-clock{
+    width: 24px;
+    height: 24px;
+    
+}
+.fa-comment-dots{
+    width: 24px;
+    height: 24px;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #465a70;
+    width: 100%;
+    height: 420px;
+    margin-top: 110px;
+    padding: 40px 0px;
+}
+footer h2{
+    font-size: 50px;
+    
+}
+footer hr{
+    width: 1200px;
+    color: 1px solid #ffffff;
+}
+
+footer .f-list{
+    margin-top: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #b0adad;
+
+}
+footer ul li{
+    display: inline-block;
+    padding: 0px 15px;
+
+}
+
+footer.social-sites{
+    color: #161616;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+footer.social-sites a{
+    font-size: 30px;
+    color: #161616;
+    border: 1px solid darkslateblue;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0px 8px;
+
+
+
+}
+
+
+
