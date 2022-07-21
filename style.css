@@ -20,10 +20,7 @@ header{
     justify-content: center;
     
 }
-.ball{
-    width: 10px;
-    height: 100px;
-}
+
 
 .top-banner{
     
@@ -299,8 +296,20 @@ footer.social{
 
  /* mobile devices */
 @media only screen and(max-width:688px){
+
+    body{
+        width: 100%;
+        grid-template-columns: repeat(1px, 1fr);
+    }
     .top-banner{
+        
         grid-template-columns: repeat(1,1fr);
+
+    }
+    .blogs-display{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
     
 }
